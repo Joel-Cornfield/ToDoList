@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("https://img.freepik.com/free-vector/rainbow-frame-cute-doodle-border-vector_53876-135969.jpg?w=1060&t=st=1707713016~exp=1707713616~hmac=234b3b0df4bb7a9433ed4d2cbd2a325bc59b548fddf65efee4526f934c5f381f");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-family: 'Rocher';
+    margin: 40px 0;
+}
+
+
+.container{
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;;
+}
+
+.add-task{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#input-task{
+    width: 75%;
+    height: 2rem;
+    border: none;
+    border-bottom: solid 2px #d59fd0;
+    margin-bottom: 40px;
+    padding-left: 5px;
+}
+
+#add-task-button {
+    position: relative;
+    width: 20%;
+    border: none;
+    background-color: #d59fd0;
+    border-radius: 5px;
+    color: white;
+    top: -5px;
+    cursor: pointer;
+}
+
+#add-task-button:hover {
+    animation: pulse 1s infinite alternate; /* Apply animation only on hover */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Initial size */
+    }
+    100% {
+        transform: scale(1.08); /* Size when hovered */
+    }
+}
+
+#add-task-button:active{
+    background-color: #ce80c8;
+}
+
+#task-list{
+    list-style: none;
+    width: 100%;
+}
+
+#task-list li{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Henny Penny", cursive;
+}
+
+.delete-btn {
+    background: red;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    width: 50px;
+    height: 22px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.delete-btn::after {
+    content: "\00d7";
+    position: relative;
+    font-size: x-large;
+    top: -10%;
+}
+
+.task{
+    width: 80%;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.task-complete {
+    cursor: pointer;
+}
