@@ -1,115 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@font-face {
-    font-family: 'Rocher';
-    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
+h1 {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    background-image: url("https://img.freepik.com/free-vector/rainbow-frame-cute-doodle-border-vector_53876-135969.jpg?w=1060&t=st=1707713016~exp=1707713616~hmac=234b3b0df4bb7a9433ed4d2cbd2a325bc59b548fddf65efee4526f934c5f381f");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-h1{
-    font-family: 'Rocher';
-    margin: 40px 0;
-}
-
-
-.container{
-    max-width: 500px;
+#task-list-wrapper, #add-task {
+    display: flex;
+    justify-content: center;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Open Sans', sans-serif;;
+    width: 70%;
 }
 
-.add-task{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-#input-task{
-    width: 75%;
-    height: 2rem;
-    border: none;
-    border-bottom: solid 2px #d59fd0;
-    margin-bottom: 40px;
-    padding-left: 5px;
+#input-task {
+    margin-right: auto;
+    flex-grow: 1;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: mediumpurple;
+    font-family: 'Roboto Mono', monospace;
 }
 
 #add-task-button {
-    position: relative;
-    width: 20%;
-    border: none;
-    background-color: #d59fd0;
-    border-radius: 5px;
+    margin-left: auto;
+    width: 90px;
+    font-family: 'Roboto Slab', serif;
     color: white;
-    top: -5px;
+    font-size: small;
+    background-color: mediumpurple;
+    border: mediumpurple;
     cursor: pointer;
 }
 
-#add-task-button:hover {
-    animation: pulse 1s infinite alternate; /* Apply animation only on hover */
+#add-task-button:active {
+    background-color: rebeccapurple;
 }
 
-@keyframes pulse {
-    0% {
-        transform: scale(1); /* Initial size */
-    }
-    100% {
-        transform: scale(1.08); /* Size when hovered */
-    }
+.spacer {
+    width: 2%;
 }
 
-#add-task-button:active{
-    background-color: #ce80c8;
+#task-list-wrapper {
+    justify-content: center;
+    align-items: center;
 }
 
-#task-list{
-    list-style: none;
+ul {
+    margin-right: auto;
     width: 100%;
 }
 
-#task-list li{
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: "Henny Penny", cursive;
+li {
+    list-style-type: none;
+}
+
+li + li {
+    margin-top: 10px;
+}
+
+.task, .task-complete {
+    vertical-align: middle;
+}
+.task {
+    font-family: 'Roboto Mono', monospace;
 }
 
 .delete-btn {
-    background: red;
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    width: 50px;
-    height: 22px;
-    margin-left: 50px;
-    cursor: pointer;
-}
-
-.delete-btn::after {
-    content: "\00d7";
+    vertical-align: middle;
     position: relative;
-    font-size: x-large;
-    top: -10%;
-}
+    float: right;
 
-.task{
-    width: 80%;
-    text-align: left;
-    margin-left: 10px;
+    width: 1.5em;
+    height: 1.5em;
+    border: none;
+    
+    background-image: url("del-black.png");
+    background-size: cover;
+    background-color: white;
 }
-
-.task-complete {
+.delete-btn:hover {
+    background-image: url("del-red.png");
+    background-size: cover;
     cursor: pointer;
 }
+
