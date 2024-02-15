@@ -14,3 +14,8 @@ Check out my hyperskill profile: https://hyperskill.org/profile/604344431
 * Clone the repository to your local machine:
 * Navigate to the project directory:
 * Open the index.html file in your web browser to view the application.
+
+# Technologies used
+* HTML
+* CSS
+* JavaScript
