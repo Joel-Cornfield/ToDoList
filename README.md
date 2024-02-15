@@ -5,7 +5,7 @@ You can find the original project description and tasks on [Hyperskill](https://
 
 Check out my hyperskill profile: https://hyperskill.org/profile/604344431
 
-!(screenshot.png)
+!(https://github.com/Joel-Cornfield/ToDoList/blob/main/screenshot.png)
 
 # Features #
 * create new tasks
