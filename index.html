@@ -6,31 +6,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>To-Do List</h1>
-        <div id="add-task">
-            <input type="text" id="input-task" placeholder="type task name here...">
-            <button id="add-task-button">ADD TASK</button>
-        </div>
-        <div class="task-list-wrapper">
-            <ul id="task-list">
-               <li class="tasks">
-                   <input type="checkbox" class="task-complete">
-                   <span class="task">Email David</span>
-                   <button class="delete-btn"></button>
-               </li>
-                <li class="tasks">
-                    <input type="checkbox" class="task-complete">
-                    <span class="task">Create ideal user persona guide</span>
-                    <button class="delete-btn"></button>
-                </li>
-                <li class="tasks">
-                    <input type="checkbox" class="task-complete">
-                    <span class="task">Set up A/B test</span>
-                    <button class="delete-btn"></button>
-                </li>
-            </ul>
-        </div>
+    <h1>To-Do List</h1>
+    <div id="add-task">
+        <input type="text" class="input" id="input-task">
+        <span class="spacer"></span>
+        <button id="add-task-button">ADD TASK</button>
+    </div>
+
+    <div id="task-list-wrapper">
+        <ul id="task-list">
+        </ul>
     </div>
     <script src="index.js"></script>
 </body>
