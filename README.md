@@ -9,3 +9,8 @@ Check out my hyperskill profile: https://hyperskill.org/profile/604344431
 * create new tasks
 * mark tasks as complete
 * delete tasks
+
+# Getting Started #
+* Clone the repository to your local machine:
+* Navigate to the project directory:
+* Open the index.html file in your web browser to view the application.
