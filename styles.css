@@ -10,7 +10,7 @@ h1 {
     display: flex;
     justify-content: center;
     margin: auto;
-    width: 70%;
+    width: 65%;
 }
 
 #input-task {
@@ -25,8 +25,8 @@ h1 {
 #add-task-button {
     margin-left: auto;
     width: 90px;
-    font-family: 'Roboto Slab', serif;
     color: white;
+    font-family: 'Roboto Slab', serif;
     font-size: small;
     background-color: mediumpurple;
     border: mediumpurple;
@@ -79,6 +79,7 @@ li + li {
     background-size: cover;
     background-color: white;
 }
+
 .delete-btn:hover {
     background-image: url("del-red.png");
     background-size: cover;
